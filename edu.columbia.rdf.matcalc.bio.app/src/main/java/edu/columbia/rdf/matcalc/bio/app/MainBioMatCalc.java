@@ -40,12 +40,7 @@ public class MainBioMatCalc {
 		MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), 
 				new BioAppModuleLoader());
 		
-		window.openFile(file, 
-				true, 
-				TextUtils.emptyList(), 
-				rowAnnotations, 
-				TextUtils.TAB_DELIMITER, 
-				OpenMode.NEW_WINDOW);
+		window.openFile(file).rowAnnotations(rowAnnotations).open();
 	}
 	
 	public static void autoOpen(Path file, 
@@ -53,12 +48,7 @@ public class MainBioMatCalc {
 		MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), 
 				new BioAppModuleLoader());
 		
-		window.autoOpenFile(file, 
-				true, 
-				TextUtils.emptyList(), 
-				rowAnnotations, 
-				TextUtils.TAB_DELIMITER, 
-				OpenMode.NEW_WINDOW);
+		window.openFile(file).rowAnnotations(rowAnnotations).autoOpen();
 	}
 
 	public static void openMatrix(AnnotationMatrix matrix) throws ClassNotFoundException, InstantiationException, IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException {
