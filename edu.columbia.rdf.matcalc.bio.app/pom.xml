@@ -96,7 +96,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.regions.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.regions.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
@@ -116,12 +116,12 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.pathway.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.pathway.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>edu.columbia.rdf.matcalc.toolbox.bio.ideogram.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.ideogram.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
@@ -131,7 +131,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>edu.columbia.rdf.matcalc.toolbox.bio.newdendrogram.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.newdendrogram.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
@@ -141,7 +141,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.patterndiscovery.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.patterndiscovery.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
