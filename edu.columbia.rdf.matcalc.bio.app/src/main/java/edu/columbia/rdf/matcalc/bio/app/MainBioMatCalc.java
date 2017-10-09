@@ -10,16 +10,15 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.jebtk.core.AppService;
-import org.jebtk.core.text.TextUtils;
 import org.jebtk.math.matrix.AnnotationMatrix;
 import org.jebtk.modern.ColorTheme;
 import org.jebtk.modern.help.GuiAppInfo;
 import org.jebtk.modern.theme.ThemeService;
+import org.xml.sax.SAXException;
+
 import edu.columbia.rdf.matcalc.MainMatCalc;
 import edu.columbia.rdf.matcalc.MainMatCalcWindow;
 import edu.columbia.rdf.matcalc.MatCalcInfo;
-import edu.columbia.rdf.matcalc.OpenMode;
-import org.xml.sax.SAXException;
 
 
 

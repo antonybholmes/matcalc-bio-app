@@ -106,7 +106,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.dna.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.dna.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
@@ -152,11 +152,6 @@
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
 			<artifactId>org.matcalc.toolbox.bio.genes.info.app</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.paste.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
