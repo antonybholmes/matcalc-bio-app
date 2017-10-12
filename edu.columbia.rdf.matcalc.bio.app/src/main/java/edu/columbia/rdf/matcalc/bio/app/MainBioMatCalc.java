@@ -10,7 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.jebtk.core.AppService;
-import org.jebtk.math.matrix.AnnotationMatrix;
+import org.jebtk.math.matrix.DataFrame;
 import org.jebtk.modern.ColorTheme;
 import org.jebtk.modern.help.GuiAppInfo;
 import org.jebtk.modern.theme.ThemeService;
@@ -50,7 +50,7 @@ public class MainBioMatCalc {
 		window.openFile(file).rowAnnotations(rowAnnotations).autoOpen();
 	}
 
-	public static void openMatrix(AnnotationMatrix matrix) throws ClassNotFoundException, InstantiationException, IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException {
+	public static void openMatrix(DataFrame matrix) throws ClassNotFoundException, InstantiationException, IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException {
 		MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), 
 				new BioAppModuleLoader());
 		
