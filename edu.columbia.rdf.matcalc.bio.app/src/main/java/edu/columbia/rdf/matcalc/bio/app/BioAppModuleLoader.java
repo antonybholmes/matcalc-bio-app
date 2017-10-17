@@ -4,7 +4,6 @@ import org.matcalc.toolbox.bio.genes.GenesModule;
 import org.matcalc.toolbox.bio.genes.annotation.GeneAnnotationModule;
 import org.matcalc.toolbox.bio.genes.info.GeneInfoModule;
 import org.matcalc.toolbox.bio.motifs.MotifsModule;
-import org.matcalc.toolbox.bio.probes.ProbesModule;
 
 import edu.columbia.rdf.matcalc.bio.BioModuleLoader;
 import edu.columbia.rdf.matcalc.bio.toolbox.expression.ExpressionModule;
@@ -16,9 +15,9 @@ import edu.columbia.rdf.matcalc.toolbox.dna.DnaModule;
 import edu.columbia.rdf.matcalc.toolbox.ideogram.IdeogramModule;
 import edu.columbia.rdf.matcalc.toolbox.newdendrogram.NewDendrogramModule;
 import edu.columbia.rdf.matcalc.toolbox.pathway.PathwayModule;
-import edu.columbia.rdf.matcalc.toolbox.patterndiscovery.PatternDiscoveryModule;
+import edu.columbia.rdf.matcalc.toolbox.probes.ProbesModule;
 import edu.columbia.rdf.matcalc.toolbox.regions.RegionsModule;
-
+import edu.columbia.rdf.matcalc.toolbox.patterndiscovery.PatternDiscoveryModule;
 
 
 public class BioAppModuleLoader extends BioModuleLoader {

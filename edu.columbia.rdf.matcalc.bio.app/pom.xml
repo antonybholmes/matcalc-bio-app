@@ -136,7 +136,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.probes.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.probes.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
