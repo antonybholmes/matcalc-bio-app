@@ -101,8 +101,8 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>org.matcalc.toolbox.bio.genes.app</artifactId>
-			<version>9.0.0</version>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.conversion.app</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
@@ -126,7 +126,7 @@
 		</dependency>
 		<dependency>
 			<groupId>edu.columbia.rdf.matcalc</groupId>
-			<artifactId>edu.columbia.rdf.matcalc.toolbox.bio.annotation.app</artifactId>
+			<artifactId>edu.columbia.rdf.matcalc.toolbox.annotation.app</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
