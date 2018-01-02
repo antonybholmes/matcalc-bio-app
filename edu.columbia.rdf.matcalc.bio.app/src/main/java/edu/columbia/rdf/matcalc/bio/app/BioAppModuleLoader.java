@@ -1,7 +1,5 @@
 package edu.columbia.rdf.matcalc.bio.app;
 
-import org.matcalc.toolbox.bio.genes.info.GeneInfoModule;
-
 import edu.columbia.rdf.matcalc.bio.BioModuleLoader;
 import edu.columbia.rdf.matcalc.bio.toolbox.expression.ExpressionModule;
 import edu.columbia.rdf.matcalc.bio.toolbox.fillgaps.FillGapsModule;
@@ -11,6 +9,7 @@ import edu.columbia.rdf.matcalc.toolbox.annotation.AnnotationModule;
 import edu.columbia.rdf.matcalc.toolbox.conversion.ConversionModule;
 import edu.columbia.rdf.matcalc.toolbox.dna.DnaModule;
 import edu.columbia.rdf.matcalc.toolbox.genes.GeneAnnotationModule;
+import edu.columbia.rdf.matcalc.toolbox.genes.info.GeneInfoModule;
 import edu.columbia.rdf.matcalc.toolbox.ideogram.IdeogramModule;
 import edu.columbia.rdf.matcalc.toolbox.motifs.MotifsModule;
 import edu.columbia.rdf.matcalc.toolbox.newdendrogram.NewDendrogramModule;
