@@ -18,47 +18,46 @@ import edu.columbia.rdf.matcalc.toolbox.patterndiscovery.PatternDiscoveryModule;
 import edu.columbia.rdf.matcalc.toolbox.probes.ProbesModule;
 import edu.columbia.rdf.matcalc.toolbox.regions.RegionsModule;
 
-
 public class BioAppModuleLoader extends BioModuleLoader {
-	public BioAppModuleLoader() {
-		addModule(AnnotationModule.class);
-		addModule(FillGapsModule.class);
-		
-		addModule(CollapseModule.class);
-		
-		addModule(ProbesModule.class);
-		addModule(ProbeLocationsModule.class);
-		
-		addModule(ExpressionModule.class);
-		//addModule(ClsModule.class);
-		//addModule(PermuteClsModule.class);
-		
-		//addModule(GseaPlotModule.class);
-		
-		addModule(RegionsModule.class);
-		
-		addModule(GeneAnnotationModule.class);
-		
-		addModule(ConversionModule.class);
-		
-		addModule(GeneInfoModule.class);
-		
-		addModule(DnaModule.class);
+  public BioAppModuleLoader() {
+    addModule(AnnotationModule.class);
+    addModule(FillGapsModule.class);
 
-		addModule(MotifsModule.class);
-		
-		//
-		// Bio modules
-		//
-		
-		addModule(NewDendrogramModule.class);
-		
-		addModule(PatternDiscoveryModule.class);
-		
-		//ddModule(ClassifierModule.class);
-		
-		addModule(PathwayModule.class);
-		
-		addModule(IdeogramModule.class);
-	}
+    addModule(CollapseModule.class);
+
+    addModule(ProbesModule.class);
+    addModule(ProbeLocationsModule.class);
+
+    addModule(ExpressionModule.class);
+    // addModule(ClsModule.class);
+    // addModule(PermuteClsModule.class);
+
+    // addModule(GseaPlotModule.class);
+
+    addModule(RegionsModule.class);
+
+    addModule(GeneAnnotationModule.class);
+
+    addModule(ConversionModule.class);
+
+    addModule(GeneInfoModule.class);
+
+    addModule(DnaModule.class);
+
+    addModule(MotifsModule.class);
+
+    //
+    // Bio modules
+    //
+
+    addModule(NewDendrogramModule.class);
+
+    addModule(PatternDiscoveryModule.class);
+
+    // ddModule(ClassifierModule.class);
+
+    addModule(PathwayModule.class);
+
+    addModule(IdeogramModule.class);
+  }
 }
