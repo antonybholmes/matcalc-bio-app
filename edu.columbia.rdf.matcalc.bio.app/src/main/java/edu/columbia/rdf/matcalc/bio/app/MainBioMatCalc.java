@@ -19,10 +19,12 @@ import org.xml.sax.SAXException;
 import edu.columbia.rdf.matcalc.MainMatCalc;
 import edu.columbia.rdf.matcalc.MainMatCalcWindow;
 import edu.columbia.rdf.matcalc.MatCalcInfo;
+import edu.columbia.rdf.matcalc.OpenFile;
 
 public class MainBioMatCalc {
-  public static final void main(String[] args) throws ClassNotFoundException, InstantiationException,
-      IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException {
+  public static final void main(String[] args) throws ClassNotFoundException,
+      InstantiationException, IllegalAccessException, FontFormatException,
+      IOException, UnsupportedLookAndFeelException {
 
     AppService.getInstance().setAppInfo("matcalc");
 
@@ -33,25 +35,38 @@ public class MainBioMatCalc {
     MainMatCalc.main(info, new BioAppModuleLoader());
   }
 
-  public static void open(Path file, int rowAnnotations) throws ClassNotFoundException, InstantiationException,
-      IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException, InvalidFormatException,
-      SAXException, ParserConfigurationException, ParseException {
-    MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), new BioAppModuleLoader());
-
-    window.openFile(file).rowAnnotations(rowAnnotations).open();
+  public static final MainMatCalcWindow main() throws ClassNotFoundException,
+      InstantiationException, IllegalAccessException, FontFormatException,
+      IOException, UnsupportedLookAndFeelException {
+    return MainMatCalc.main(new MatCalcInfo(), new BioAppModuleLoader());
   }
 
-  public static void autoOpen(Path file, int rowAnnotations) throws ClassNotFoundException, InstantiationException,
-      IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException, InvalidFormatException,
-      SAXException, ParserConfigurationException, ParseException {
-    MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), new BioAppModuleLoader());
+  public static void open(Path file, int rowAnnotations)
+      throws ClassNotFoundException, InstantiationException,
+      IllegalAccessException, FontFormatException, IOException,
+      UnsupportedLookAndFeelException, InvalidFormatException, SAXException,
+      ParserConfigurationException, ParseException {
+    MainMatCalcWindow window = main();
 
-    window.openFile(file).rowAnnotations(rowAnnotations).autoOpen();
+    new OpenFile(window, file).rowAnnotations(rowAnnotations).open();
   }
 
-  public static void openMatrix(DataFrame matrix) throws ClassNotFoundException, InstantiationException,
-      IllegalAccessException, FontFormatException, IOException, UnsupportedLookAndFeelException {
-    MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(), new BioAppModuleLoader());
+  public static void autoOpen(Path file, int rowAnnotations)
+      throws ClassNotFoundException, InstantiationException,
+      IllegalAccessException, FontFormatException, IOException,
+      UnsupportedLookAndFeelException, InvalidFormatException, SAXException,
+      ParserConfigurationException, ParseException {
+    MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(),
+        new BioAppModuleLoader());
+
+    new OpenFile(window, file).rowAnnotations(rowAnnotations).autoOpen();
+  }
+
+  public static void openMatrix(DataFrame matrix) throws ClassNotFoundException,
+      InstantiationException, IllegalAccessException, FontFormatException,
+      IOException, UnsupportedLookAndFeelException {
+    MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(),
+        new BioAppModuleLoader());
 
     window.openMatrix(matrix);
   }
