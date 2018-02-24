@@ -1,6 +1,7 @@
 package edu.columbia.rdf.matcalc.bio.app;
 
 import edu.columbia.rdf.matcalc.bio.BioModuleLoader;
+import edu.columbia.rdf.matcalc.bio.FastaWriterModule;
 import edu.columbia.rdf.matcalc.bio.toolbox.expression.ExpressionModule;
 import edu.columbia.rdf.matcalc.bio.toolbox.fillgaps.FillGapsModule;
 import edu.columbia.rdf.matcalc.bio.toolbox.probes.CollapseModule;
@@ -43,6 +44,7 @@ public class BioAppModuleLoader extends BioModuleLoader {
     addModule(GeneInfoModule.class);
 
     addModule(DnaModule.class);
+    addModule(FastaWriterModule.class);
 
     addModule(MotifsModule.class);
 
