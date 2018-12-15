@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
 import edu.columbia.rdf.matcalc.MainMatCalc;
 import edu.columbia.rdf.matcalc.MainMatCalcWindow;
 import edu.columbia.rdf.matcalc.MatCalcInfo;
-import edu.columbia.rdf.matcalc.OpenFile;
+import edu.columbia.rdf.matcalc.OpenFiles;
 
 public class MainBioMatCalc {
   public static final void main(String[] args) throws ClassNotFoundException,
@@ -48,7 +48,7 @@ public class MainBioMatCalc {
       ParserConfigurationException, ParseException {
     MainMatCalcWindow window = main();
 
-    new OpenFile(window, file).rowAnnotations(rowAnnotations).open();
+    new OpenFiles(window, file).rowAnnotations(rowAnnotations).openFiles();
   }
 
   public static void autoOpen(Path file, int rowAnnotations)
@@ -59,7 +59,7 @@ public class MainBioMatCalc {
     MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(),
         new BioAppModuleLoader());
 
-    new OpenFile(window, file).rowAnnotations(rowAnnotations).autoOpen();
+    new OpenFiles(window, file).rowAnnotations(rowAnnotations).read();
   }
 
   public static void openMatrix(DataFrame matrix) throws ClassNotFoundException,
