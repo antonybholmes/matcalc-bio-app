@@ -20,6 +20,7 @@ import edu.columbia.rdf.matcalc.MainMatCalc;
 import edu.columbia.rdf.matcalc.MainMatCalcWindow;
 import edu.columbia.rdf.matcalc.MatCalcInfo;
 import edu.columbia.rdf.matcalc.OpenFiles;
+import edu.columbia.rdf.matcalc.OpenMatrices;
 
 public class MainBioMatCalc {
   public static final void main(String[] args) throws ClassNotFoundException,
@@ -48,7 +49,7 @@ public class MainBioMatCalc {
       ParserConfigurationException, ParseException {
     MainMatCalcWindow window = main();
 
-    new OpenFiles(window, file).rowAnnotations(rowAnnotations).openFiles();
+    new OpenFiles(window).indexes(rowAnnotations).open(file);
   }
 
   public static void autoOpen(Path file, int rowAnnotations)
@@ -59,7 +60,7 @@ public class MainBioMatCalc {
     MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(),
         new BioAppModuleLoader());
 
-    new OpenFiles(window, file).rowAnnotations(rowAnnotations).read();
+    new OpenFiles(window).indexes(rowAnnotations).read(file);
   }
 
   public static void openMatrix(DataFrame matrix) throws ClassNotFoundException,
@@ -68,6 +69,6 @@ public class MainBioMatCalc {
     MainMatCalcWindow window = MainMatCalc.main(new MatCalcInfo(),
         new BioAppModuleLoader());
 
-    window.openMatrix(matrix);
+    new OpenMatrices(window).open(matrix);
   }
 }
